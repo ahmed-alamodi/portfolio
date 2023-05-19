@@ -9,6 +9,7 @@ import ContactMe from '@/components/ContactMe'
 import Link from 'next/link'
 
 const Home = ({ pageInfo = { name: '' } }) => {
+
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 scroll-smooth'>
       <Head>

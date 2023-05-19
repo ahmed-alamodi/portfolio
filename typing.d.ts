@@ -1,11 +1,15 @@
+import { IconType } from "react-icons"
+
 export type Skill = {
-  image: string
+  image: (FunctionComponent<Props> | IconType)
   progress: number
   title: string
+  bgColor?: string
+  color?: string
 }
 
 export type Experience = {
-  technologies: string[]
+  technologies: (FunctionComponent<Props> | IconType)[]
   points: string[]
   dateStarted: Date
   dateEnded: Date
@@ -16,7 +20,9 @@ export type Experience = {
 export type Projects = {
   title: string,
   summary: string,
-  technologies: string[],
+  icon: string
+  technologies: (FunctionComponent<Props> | IconType)[]
+  link: string
 }
 
 export type Inputs = {

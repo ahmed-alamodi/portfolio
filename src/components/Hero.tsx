@@ -7,12 +7,12 @@ import BackgroundCircles from './BackgroundCircles';
 
 const Hero = () => {
   const [text] = useTypewriter({
-    words: [`hi, name\'s ${dataInfo.name}`, 'love typescript', '<html />'],
+    words: [`hi, name\'s ${dataInfo.name}`, 'love coding', '<html />'],
     delaySpeed: 2000,
     loop: true,
   });
   return (
-    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+    <div className='h-screen pt-40 flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
       <BackgroundCircles />
       <img
         src="IMG_1220.jpg"

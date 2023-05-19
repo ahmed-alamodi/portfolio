@@ -1,5 +1,6 @@
 import { projects } from '@/utils/data'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import React from 'react'
 
 
@@ -29,7 +30,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className='h-44 w-44'
-              src="IMG_1220.jpg"
+              src={project.icon}
               alt=""
             />
 
@@ -38,18 +39,14 @@ const Projects = () => {
                 <span className='underline decoration-[#f7ab0a]/50'>
                   case study {i + 1} of {projects.length}:
                 </span>
-                {' '}{project.title}
+                {' '}
+                <Link href={project.link} target="_blank">{project.title}</Link>
               </h4>
 
             </div>
             <div className='flex items-center space-x-2 justify-center'>
-              {project?.technologies.map((tech, i) => (
-                <img
-                  key={i}
-                  src={tech}
-                  alt=""
-                  className='h-5 w-5'
-                />
+              {project?.technologies.map((Tech, i) => (
+                <Tech key={i} className='h-5 w-5' />
               ))}
             </div>
 
