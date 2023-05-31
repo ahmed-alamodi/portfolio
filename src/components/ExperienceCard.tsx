@@ -16,6 +16,7 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => {
         viewport={{ once: true }}
         src={experience.companyImage}
         alt=""
+        loading="lazy"
         className='w-[100px] h-[100px] rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center'
       />
       <div className='px-0 md:px-10 !mt-0 w-[100%]'>
@@ -23,7 +24,7 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => {
         <p className='font-bold text-2xl mt-1'>WIP...</p>
         <div className='flex space-x-2 my-2 max-sm:justify-center'>
           {experience.technologies.map((Techno, i) => (
-            <Techno key={i} className='h-[30px] w-[30px]' />
+            <Techno loading="lazy" key={i} className='h-[30px] w-[30px]' />
           ))}
         </div>
         <p className='uppercase py-5 text-gray-500 max-sm:px-3'>

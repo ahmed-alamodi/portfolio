@@ -26,6 +26,7 @@ const Projects = () => {
                 y: -300,
                 opacity: 0,
               }}
+              loading="lazy"
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -46,7 +47,7 @@ const Projects = () => {
             </div>
             <div className='flex items-center space-x-2 justify-center'>
               {project?.technologies.map((Tech, i) => (
-                <Tech key={i} className='h-5 w-5' />
+                <Tech loading="lazy" key={i} className='h-5 w-5' />
               ))}
             </div>
 

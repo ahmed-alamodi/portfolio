@@ -1,5 +1,5 @@
 import React from 'react'
-import { SocialIcon } from 'react-social-icons'
+import { SocialIcon } from 'react-social-icons' // removing this
 import { motion } from 'framer-motion'
 import { socials } from '@/utils/data'
 

@@ -1,20 +1,10 @@
 import { ContactMe, Experience, Projects, Skill } from "typing";
-import {
-  Html5Original,
-  Css3Original,
-  JavascriptOriginal,
-  TypescriptOriginal,
-  TailwindcssPlain,
-  // CypressioOriginal,
-  ReactOriginal,
-  // ReactrouterOriginal,
-
-} from 'devicons-react';
-
-// import { SiTypescript, SiJavascript, SiCypress, SiRedux } from "react-icons/si";
-// import { GrReactjs } from "react-icons/gr";
-// import { AiFillHtml5 } from "react-icons/ai";
-// import { IoLogoCss3 } from "react-icons/io";
+import ReactOriginal from 'devicons-react/lib/icons/ReactOriginal';
+import Html5Original from 'devicons-react/lib/icons/Html5Original';
+import Css3Original from 'devicons-react/lib/icons/Css3Original';
+import JavascriptOriginal from 'devicons-react/lib/icons/JavascriptOriginal';
+import TypescriptOriginal from 'devicons-react/lib/icons/TypescriptOriginal';
+import TailwindcssPlain from 'devicons-react/lib/icons/TailwindcssPlain';
 
 export const socials: string[] = [
   "https://linkedin.com/in/ahmed-al-amodi",

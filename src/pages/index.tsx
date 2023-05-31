@@ -55,11 +55,12 @@ const Home = ({ pageInfo = { name: '' } }) => {
 
       <Link href="#hero">
         <footer className='sticky bottom-5 w-full cursor-pointer'>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-start'>
             <img
               className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0'
               src="IMG_1220.jpg"
               alt="IMG_1220.jpg"
+              loading="lazy"
             />
           </div>
         </footer>
